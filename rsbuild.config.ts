@@ -1,14 +1,10 @@
 import { defineConfig } from '@rsbuild/core';
-import { pluginLess } from '@rsbuild/plugin-less';
 import { pluginReact } from '@rsbuild/plugin-react';
-import { pluginSvgr } from "@rsbuild/plugin-svgr";
+import { pluginLess } from '@rsbuild/plugin-less';
 
 export default defineConfig({
   plugins: [
     pluginReact(),
-    pluginSvgr({
-      mixedImport: true
-    }),
     pluginLess({
       lessLoaderOptions: {
         lessOptions: {
@@ -27,12 +23,7 @@ export default defineConfig({
     }
   },
   server: {
-    port: 3000,
-    proxy: {
-      '/api': {
-        target: 'http://localhost:8050/',
-        changeOrigin: true,
-      },
-    },
+    base: '/rsb', // 启动server时增加前缀
+    port: 3336 // 默认端口 3000
   }
 });

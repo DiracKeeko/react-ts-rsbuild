@@ -18,32 +18,11 @@ module.exports = {
     ecmaVersion: 2022,
     sourceType: 'module'
   },
-  plugins: ['react', '@typescript-eslint', 'simple-import-sort', 'prettier'],
+  plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
     'prettier/prettier': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
-    'simple-import-sort/imports': [
-      'error',
-      {
-        groups: [
-          ['^react', '^@?\\w'],
-          ['^@(?:\\/.*|$)'],
-          [
-            '^(\\.\\.\\/){2,}\\w+(\\/\\w+)*$',
-            '^\\.\\.\\/\\w+(\\/\\w+)*$',
-            '^\\.\\/\\w+$',
-            '^(\\.\\/\\w+)(\\/\\w+)+$'
-          ],
-          [
-            '^(\\.\\.\\/)+\\w+(\\/\\w+)*(\\.(less|css))$',
-            '^(\\.\\/\\w+)(\\/\\w+)*(\\.(less|css))$'
-          ],
-          ['^\\u0000']
-        ]
-      }
-    ],
-    'simple-import-sort/exports': 'error'
   },
   settings: {
     react: {
