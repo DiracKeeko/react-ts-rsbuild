@@ -2618,12 +2618,12 @@ li:last-child > .ant-breadcrumb-separator {
   line-height: 1.5715;
   position: relative;
   display: inline-block;
-  font-weight: 500;
+  font-weight: 400;
   white-space: nowrap;
   text-align: center;
   background-image: none;
   border: 1px solid transparent;
-  box-shadow: none;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   user-select: none;
@@ -2632,8 +2632,8 @@ li:last-child > .ant-breadcrumb-separator {
   padding: 4px 15px;
   font-size: 14px;
   border-radius: 3px;
-  color: var(--primary-color);
-  border-color: var(--primary-color);
+  color: rgba(0, 0, 0, 0.85);
+  border-color: #d9d9d9;
   background: #fff;
 }
 .ant-btn > .anticon {
@@ -2665,8 +2665,8 @@ li:last-child > .ant-breadcrumb-separator {
 }
 .ant-btn-sm {
   height: 24px;
-  padding: 1.6px 12px;
-  font-size: 12px;
+  padding: 0px 7px;
+  font-size: 14px;
   border-radius: 3px;
 }
 .ant-btn > a:only-child {
@@ -2759,8 +2759,8 @@ li:last-child > .ant-breadcrumb-separator {
   color: #fff;
   border-color: #1b5fc5;
   background: #1b5fc5;
-  text-shadow: none;
-  box-shadow: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
 }
 .ant-btn-primary > a:only-child {
   color: currentcolor;
@@ -2844,13 +2844,13 @@ li:last-child > .ant-breadcrumb-separator {
   border-left-color: #3f7ed1;
 }
 .ant-btn-group .ant-btn-primary:not(:first-child):not(:last-child):disabled {
-  border-color: var(--primary-color);
+  border-color: #d9d9d9;
 }
 .ant-btn-group .ant-btn-primary:first-child:not(:last-child) {
   border-right-color: #3f7ed1;
 }
 .ant-btn-group .ant-btn-primary:first-child:not(:last-child)[disabled] {
-  border-right-color: var(--primary-color);
+  border-right-color: #d9d9d9;
 }
 .ant-btn-group .ant-btn-primary:last-child:not(:first-child),
 .ant-btn-group .ant-btn-primary + .ant-btn-primary {
@@ -2858,7 +2858,7 @@ li:last-child > .ant-breadcrumb-separator {
 }
 .ant-btn-group .ant-btn-primary:last-child:not(:first-child)[disabled],
 .ant-btn-group .ant-btn-primary + .ant-btn-primary[disabled] {
-  border-left-color: var(--primary-color);
+  border-left-color: #d9d9d9;
 }
 .ant-btn-ghost {
   color: rgba(0, 0, 0, 0.85);
@@ -2943,8 +2943,8 @@ li:last-child > .ant-breadcrumb-separator {
   content: '';
 }
 .ant-btn-dashed {
-  color: var(--primary-color);
-  border-color: var(--primary-color);
+  color: rgba(0, 0, 0, 0.85);
+  border-color: #d9d9d9;
   background: #fff;
   border-style: dashed;
 }
@@ -3029,8 +3029,8 @@ li:last-child > .ant-breadcrumb-separator {
   color: #fff;
   border-color: #ff4d4f;
   background: #ff4d4f;
-  text-shadow: none;
-  box-shadow: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
 }
 .ant-btn-danger > a:only-child {
   color: currentcolor;
@@ -3436,8 +3436,8 @@ li:last-child > .ant-breadcrumb-separator {
   color: #fff;
   border-color: #ff4d4f;
   background: #ff4d4f;
-  text-shadow: none;
-  box-shadow: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
 }
 .ant-btn-dangerous.ant-btn-primary > a:only-child {
   color: currentcolor;
@@ -4087,7 +4087,7 @@ a.ant-btn-icon-only > .anticon {
 .ant-btn.ant-btn-background-ghost[disabled] {
   color: rgba(0, 0, 0, 0.25);
   background: transparent;
-  border-color: var(--primary-color);
+  border-color: #d9d9d9;
 }
 .ant-btn-background-ghost.ant-btn-primary {
   color: #1b5fc5;
@@ -4578,11 +4578,11 @@ a.ant-btn-sm {
 .ant-btn-group-rtl.ant-btn-group .ant-btn-primary:last-child:not(:first-child),
 .ant-btn-group-rtl.ant-btn-group .ant-btn-primary + .ant-btn-primary {
   border-right-color: #3f7ed1;
-  border-left-color: var(--primary-color);
+  border-left-color: #d9d9d9;
 }
 .ant-btn-group-rtl.ant-btn-group .ant-btn-primary:last-child:not(:first-child)[disabled],
 .ant-btn-group-rtl.ant-btn-group .ant-btn-primary + .ant-btn-primary[disabled] {
-  border-right-color: var(--primary-color);
+  border-right-color: #d9d9d9;
   border-left-color: #3f7ed1;
 }
 .ant-btn-rtl.ant-btn > .ant-btn-loading-icon .anticon {
@@ -6230,7 +6230,7 @@ a.ant-btn-sm {
 }
 .ant-picker:hover,
 .ant-picker-focused {
-  border-color: var(--primary-color);
+  border-color: #3f7ed1;
   border-right-width: 1px;
 }
 .ant-input-rtl .ant-picker:hover,
@@ -6278,7 +6278,7 @@ a.ant-btn-sm {
   line-height: 1.5715;
   background-color: #fff;
   background-image: none;
-  border: 1px solid var(--neutral-dc-color);
+  border: 1px solid #d9d9d9;
   border-radius: 3px;
   transition: all 0.3s;
   flex: auto;
@@ -6296,7 +6296,7 @@ a.ant-btn-sm {
   text-overflow: ellipsis;
 }
 .ant-picker-input > input:hover {
-  border-color: var(--primary-color);
+  border-color: #3f7ed1;
   border-right-width: 1px;
 }
 .ant-input-rtl .ant-picker-input > input:hover {
@@ -6318,25 +6318,25 @@ a.ant-btn-sm {
 .ant-picker-input > input-disabled {
   color: rgba(0, 0, 0, 0.25);
   background-color: #f5f5f5;
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   box-shadow: none;
   cursor: not-allowed;
   opacity: 1;
 }
 .ant-picker-input > input-disabled:hover {
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   border-right-width: 1px;
 }
 .ant-picker-input > input[disabled] {
   color: rgba(0, 0, 0, 0.25);
   background-color: #f5f5f5;
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   box-shadow: none;
   cursor: not-allowed;
   opacity: 1;
 }
 .ant-picker-input > input[disabled]:hover {
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   border-right-width: 1px;
 }
 .ant-picker-input > input-borderless,
@@ -14234,7 +14234,7 @@ _:-ms-fullscreen .ant-picker-range-wrapper .ant-picker-year-panel .ant-picker-ce
   line-height: 1.5715;
   background-color: #fff;
   background-image: none;
-  border: 1px solid var(--neutral-dc-color);
+  border: 1px solid #d9d9d9;
   border-radius: 3px;
   transition: all 0.3s;
   display: inline-flex;
@@ -14247,7 +14247,7 @@ _:-ms-fullscreen .ant-picker-range-wrapper .ant-picker-year-panel .ant-picker-ce
   text-overflow: ellipsis;
 }
 .ant-input-affix-wrapper:hover {
-  border-color: var(--primary-color);
+  border-color: #3f7ed1;
   border-right-width: 1px;
 }
 .ant-input-rtl .ant-input-affix-wrapper:hover {
@@ -14269,25 +14269,25 @@ _:-ms-fullscreen .ant-picker-range-wrapper .ant-picker-year-panel .ant-picker-ce
 .ant-input-affix-wrapper-disabled {
   color: rgba(0, 0, 0, 0.25);
   background-color: #f5f5f5;
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   box-shadow: none;
   cursor: not-allowed;
   opacity: 1;
 }
 .ant-input-affix-wrapper-disabled:hover {
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   border-right-width: 1px;
 }
 .ant-input-affix-wrapper[disabled] {
   color: rgba(0, 0, 0, 0.25);
   background-color: #f5f5f5;
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   box-shadow: none;
   cursor: not-allowed;
   opacity: 1;
 }
 .ant-input-affix-wrapper[disabled]:hover {
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   border-right-width: 1px;
 }
 .ant-input-affix-wrapper-borderless,
@@ -14319,7 +14319,7 @@ textarea.ant-input-affix-wrapper {
   direction: rtl;
 }
 .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
-  border-color: var(--primary-color);
+  border-color: #3f7ed1;
   border-right-width: 1px;
   z-index: 1;
 }
@@ -14500,7 +14500,7 @@ textarea.ant-input-affix-wrapper {
   line-height: 1.5715;
   background-color: #fff;
   background-image: none;
-  border: 1px solid var(--neutral-dc-color);
+  border: 1px solid #d9d9d9;
   border-radius: 3px;
   transition: all 0.3s;
 }
@@ -14512,7 +14512,7 @@ textarea.ant-input-affix-wrapper {
   text-overflow: ellipsis;
 }
 .ant-input:hover {
-  border-color: var(--primary-color);
+  border-color: #3f7ed1;
   border-right-width: 1px;
 }
 .ant-input-rtl .ant-input:hover {
@@ -14534,25 +14534,25 @@ textarea.ant-input-affix-wrapper {
 .ant-input-disabled {
   color: rgba(0, 0, 0, 0.25);
   background-color: #f5f5f5;
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   box-shadow: none;
   cursor: not-allowed;
   opacity: 1;
 }
 .ant-input-disabled:hover {
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   border-right-width: 1px;
 }
 .ant-input[disabled] {
   color: rgba(0, 0, 0, 0.25);
   background-color: #f5f5f5;
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   box-shadow: none;
   cursor: not-allowed;
   opacity: 1;
 }
 .ant-input[disabled]:hover {
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   border-right-width: 1px;
 }
 .ant-input-borderless,
@@ -14654,7 +14654,7 @@ textarea.ant-input {
   font-size: 14px;
   text-align: center;
   background-color: #fafafa;
-  border: 1px solid var(--neutral-dc-color);
+  border: 1px solid #d9d9d9;
   border-radius: 3px;
   transition: all 0.3s;
 }
@@ -14856,12 +14856,12 @@ textarea.ant-input {
   border-radius: 0 3px 3px 0;
 }
 .ant-input-group-rtl .ant-input-group-addon:first-child {
-  border-right: 1px solid var(--neutral-dc-color);
+  border-right: 1px solid #d9d9d9;
   border-left: 0;
 }
 .ant-input-group-rtl .ant-input-group-addon:last-child {
   border-right: 0;
-  border-left: 1px solid var(--neutral-dc-color);
+  border-left: 1px solid #d9d9d9;
   border-radius: 3px 0 0 3px;
 }
 .ant-input-group-rtl.ant-input-group > .ant-input:last-child,
@@ -14907,13 +14907,13 @@ textarea.ant-input {
   border-radius: 3px 0 0 3px;
 }
 .ant-input-group-rtl .ant-input-group-addon:first-child {
-  border-right: 1px solid var(--neutral-dc-color);
+  border-right: 1px solid #d9d9d9;
   border-left: 0;
   border-radius: 0 3px 3px 0;
 }
 .ant-input-group-rtl .ant-input-group-addon:last-child {
   border-right: 0;
-  border-left: 1px solid var(--neutral-dc-color);
+  border-left: 1px solid #d9d9d9;
   border-radius: 3px 0 0 3px;
 }
 .ant-input-group-wrapper {
@@ -14999,11 +14999,11 @@ textarea.ant-input {
 }
 .ant-input-search .ant-input:hover,
 .ant-input-search .ant-input:focus {
-  border-color: var(--primary-color);
+  border-color: #3f7ed1;
 }
 .ant-input-search .ant-input:hover + .ant-input-group-addon .ant-input-search-button:not(.ant-btn-primary),
 .ant-input-search .ant-input:focus + .ant-input-group-addon .ant-input-search-button:not(.ant-btn-primary) {
-  border-left-color: var(--primary-color);
+  border-left-color: #3f7ed1;
 }
 .ant-input-search .ant-input-affix-wrapper {
   border-radius: 0;
@@ -15108,11 +15108,11 @@ textarea.ant-input {
 }
 .ant-input-search-rtl .ant-input:hover + .ant-input-group-addon .ant-input-search-button:not(.ant-btn-primary):hover,
 .ant-input-search-rtl .ant-input:focus + .ant-input-group-addon .ant-input-search-button:not(.ant-btn-primary):hover {
-  border-left-color: var(--primary-color);
+  border-left-color: #3f7ed1;
 }
 .ant-input-search-rtl > .ant-input-group > .ant-input-affix-wrapper:hover,
 .ant-input-search-rtl > .ant-input-group > .ant-input-affix-wrapper-focused {
-  border-right-color: var(--primary-color);
+  border-right-color: #3f7ed1;
 }
 .ant-input-search-rtl > .ant-input-group > .ant-input-group-addon:last-child {
   right: -1px;
@@ -15145,7 +15145,7 @@ textarea.ant-input {
   line-height: 1.5715;
   background-color: #fff;
   background-image: none;
-  border: 1px solid var(--neutral-dc-color);
+  border: 1px solid #d9d9d9;
   border-radius: 3px;
   transition: all 0.3s;
   position: relative;
@@ -15162,7 +15162,7 @@ textarea.ant-input {
   text-overflow: ellipsis;
 }
 .ant-input-number-affix-wrapper:hover {
-  border-color: var(--primary-color);
+  border-color: #3f7ed1;
   border-right-width: 1px;
 }
 .ant-input-rtl .ant-input-number-affix-wrapper:hover {
@@ -15184,25 +15184,25 @@ textarea.ant-input {
 .ant-input-number-affix-wrapper-disabled {
   color: rgba(0, 0, 0, 0.25);
   background-color: #f5f5f5;
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   box-shadow: none;
   cursor: not-allowed;
   opacity: 1;
 }
 .ant-input-number-affix-wrapper-disabled:hover {
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   border-right-width: 1px;
 }
 .ant-input-number-affix-wrapper[disabled] {
   color: rgba(0, 0, 0, 0.25);
   background-color: #f5f5f5;
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   box-shadow: none;
   cursor: not-allowed;
   opacity: 1;
 }
 .ant-input-number-affix-wrapper[disabled]:hover {
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   border-right-width: 1px;
 }
 .ant-input-number-affix-wrapper-borderless,
@@ -15234,7 +15234,7 @@ textarea.ant-input-number-affix-wrapper {
   direction: rtl;
 }
 .ant-input-number-affix-wrapper:not(.ant-input-number-affix-wrapper-disabled):hover {
-  border-color: var(--primary-color);
+  border-color: #3f7ed1;
   border-right-width: 1px;
   z-index: 1;
 }
@@ -15377,7 +15377,7 @@ textarea.ant-input-number-affix-wrapper {
   width: 90px;
   margin: 0;
   padding: 0;
-  border: 1px solid var(--neutral-dc-color);
+  border: 1px solid #d9d9d9;
   border-radius: 3px;
 }
 .ant-input-number::placeholder {
@@ -15388,7 +15388,7 @@ textarea.ant-input-number-affix-wrapper {
   text-overflow: ellipsis;
 }
 .ant-input-number:hover {
-  border-color: var(--primary-color);
+  border-color: #3f7ed1;
   border-right-width: 1px;
 }
 .ant-input-rtl .ant-input-number:hover {
@@ -15410,25 +15410,25 @@ textarea.ant-input-number-affix-wrapper {
 .ant-input-number-disabled {
   color: rgba(0, 0, 0, 0.25);
   background-color: #f5f5f5;
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   box-shadow: none;
   cursor: not-allowed;
   opacity: 1;
 }
 .ant-input-number-disabled:hover {
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   border-right-width: 1px;
 }
 .ant-input-number[disabled] {
   color: rgba(0, 0, 0, 0.25);
   background-color: #f5f5f5;
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   box-shadow: none;
   cursor: not-allowed;
   opacity: 1;
 }
 .ant-input-number[disabled]:hover {
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   border-right-width: 1px;
 }
 .ant-input-number-borderless,
@@ -15530,7 +15530,7 @@ textarea.ant-input-number {
   font-size: 14px;
   text-align: center;
   background-color: #fafafa;
-  border: 1px solid var(--neutral-dc-color);
+  border: 1px solid #d9d9d9;
   border-radius: 3px;
   transition: all 0.3s;
 }
@@ -15732,12 +15732,12 @@ textarea.ant-input-number {
   border-radius: 0 3px 3px 0;
 }
 .ant-input-number-group-rtl .ant-input-number-group-addon:first-child {
-  border-right: 1px solid var(--neutral-dc-color);
+  border-right: 1px solid #d9d9d9;
   border-left: 0;
 }
 .ant-input-number-group-rtl .ant-input-number-group-addon:last-child {
   border-right: 0;
-  border-left: 1px solid var(--neutral-dc-color);
+  border-left: 1px solid #d9d9d9;
   border-radius: 3px 0 0 3px;
 }
 .ant-input-number-group-rtl.ant-input-number-group > .ant-input-number:last-child,
@@ -15783,13 +15783,13 @@ textarea.ant-input-number {
   border-radius: 3px 0 0 3px;
 }
 .ant-input-number-group-rtl .ant-input-number-group-addon:first-child {
-  border-right: 1px solid var(--neutral-dc-color);
+  border-right: 1px solid #d9d9d9;
   border-left: 0;
   border-radius: 0 3px 3px 0;
 }
 .ant-input-number-group-rtl .ant-input-number-group-addon:last-child {
   border-right: 0;
-  border-left: 1px solid var(--neutral-dc-color);
+  border-left: 1px solid #d9d9d9;
   border-radius: 3px 0 0 3px;
 }
 .ant-input-number-group-wrapper {
@@ -15857,7 +15857,7 @@ textarea.ant-input-number {
   display: block;
 }
 .ant-input-number:hover {
-  border-color: var(--primary-color);
+  border-color: #3f7ed1;
   border-right-width: 1px;
 }
 .ant-input-number:hover + .ant-form-item-children-icon {
@@ -15877,13 +15877,13 @@ textarea.ant-input-number {
 .ant-input-number-disabled {
   color: rgba(0, 0, 0, 0.25);
   background-color: #f5f5f5;
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   box-shadow: none;
   cursor: not-allowed;
   opacity: 1;
 }
 .ant-input-number-disabled:hover {
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   border-right-width: 1px;
 }
 .ant-input-number-disabled .ant-input-number-input {
@@ -16552,7 +16552,7 @@ textarea.ant-input-number {
   font-size: 14px;
   background-color: #fff;
   background-image: none;
-  border: 1px solid var(--neutral-dc-color);
+  border: 1px solid #d9d9d9;
   border-radius: 3px;
   transition: all 0.3s;
   position: relative;
@@ -16572,7 +16572,7 @@ textarea.ant-input-number {
   text-overflow: ellipsis;
 }
 .ant-mentions:hover {
-  border-color: var(--primary-color);
+  border-color: #3f7ed1;
   border-right-width: 1px;
 }
 .ant-input-rtl .ant-mentions:hover {
@@ -16594,25 +16594,25 @@ textarea.ant-input-number {
 .ant-mentions-disabled {
   color: rgba(0, 0, 0, 0.25);
   background-color: #f5f5f5;
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   box-shadow: none;
   cursor: not-allowed;
   opacity: 1;
 }
 .ant-mentions-disabled:hover {
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   border-right-width: 1px;
 }
 .ant-mentions[disabled] {
   color: rgba(0, 0, 0, 0.25);
   background-color: #f5f5f5;
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   box-shadow: none;
   cursor: not-allowed;
   opacity: 1;
 }
 .ant-mentions[disabled]:hover {
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   border-right-width: 1px;
 }
 .ant-mentions-borderless,
@@ -16646,13 +16646,13 @@ textarea.ant-mentions {
 .ant-mentions-disabled > textarea {
   color: rgba(0, 0, 0, 0.25);
   background-color: #f5f5f5;
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   box-shadow: none;
   cursor: not-allowed;
   opacity: 1;
 }
 .ant-mentions-disabled > textarea:hover {
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   border-right-width: 1px;
 }
 .ant-mentions-focused {
@@ -18713,7 +18713,7 @@ textarea.ant-mentions {
   line-height: 1.5715;
   background-color: #fff;
   background-image: none;
-  border: 1px solid var(--neutral-dc-color);
+  border: 1px solid #d9d9d9;
   border-radius: 3px;
   transition: all 0.3s;
   width: 50px;
@@ -18728,7 +18728,7 @@ textarea.ant-mentions {
   text-overflow: ellipsis;
 }
 .ant-pagination-options-quick-jumper input:hover {
-  border-color: var(--primary-color);
+  border-color: #3f7ed1;
   border-right-width: 1px;
 }
 .ant-input-rtl .ant-pagination-options-quick-jumper input:hover {
@@ -18750,25 +18750,25 @@ textarea.ant-mentions {
 .ant-pagination-options-quick-jumper input-disabled {
   color: rgba(0, 0, 0, 0.25);
   background-color: #f5f5f5;
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   box-shadow: none;
   cursor: not-allowed;
   opacity: 1;
 }
 .ant-pagination-options-quick-jumper input-disabled:hover {
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   border-right-width: 1px;
 }
 .ant-pagination-options-quick-jumper input[disabled] {
   color: rgba(0, 0, 0, 0.25);
   background-color: #f5f5f5;
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   box-shadow: none;
   cursor: not-allowed;
   opacity: 1;
 }
 .ant-pagination-options-quick-jumper input[disabled]:hover {
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
   border-right-width: 1px;
 }
 .ant-pagination-options-quick-jumper input-borderless,
@@ -19662,7 +19662,7 @@ span.ant-radio + * {
   height: 32px;
   margin: 0;
   padding: 0 15px;
-  color: var(--primary-color);
+  color: rgba(0, 0, 0, 0.85);
   font-size: 14px;
   line-height: 30px;
   background: #fff;
@@ -19673,7 +19673,7 @@ span.ant-radio + * {
   transition: color 0.3s, background 0.3s, border-color 0.3s, box-shadow 0.3s;
 }
 .ant-radio-button-wrapper a {
-  color: var(--primary-color);
+  color: rgba(0, 0, 0, 0.85);
 }
 .ant-radio-button-wrapper > .ant-radio-button {
   position: absolute;
@@ -20515,7 +20515,7 @@ span.ant-radio + * {
   -webkit-appearance: none;
 }
 .ant-select:not(.ant-select-disabled):hover .ant-select-selector {
-  border-color: var(--primary-color);
+  border-color: #3f7ed1;
   border-right-width: 1px;
 }
 .ant-input-rtl .ant-select:not(.ant-select-disabled):hover .ant-select-selector {
@@ -21209,7 +21209,7 @@ span.ant-radio + * {
 .ant-slider-track {
   position: absolute;
   height: 4px;
-  background-color: var(--primary-color);
+  background-color: #91beeb;
   border-radius: 3px;
   transition: background-color 0.3s;
 }
@@ -21219,7 +21219,7 @@ span.ant-radio + * {
   height: 14px;
   margin-top: -5px;
   background-color: #fff;
-  border: solid 2px var(--primary-color);
+  border: solid 2px #91beeb;
   border-radius: 50%;
   box-shadow: 0;
   cursor: pointer;
@@ -24753,10 +24753,10 @@ tr.ant-table-expanded-row .ant-descriptions-view table {
   border-color: #ff4d4f;
 }
 .ant-transfer-status-error .ant-transfer-list-search:not([disabled]) {
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
 }
 .ant-transfer-status-error .ant-transfer-list-search:not([disabled]):hover {
-  border-color: var(--primary-color);
+  border-color: #3f7ed1;
   border-right-width: 1px;
 }
 .ant-input-rtl .ant-transfer-status-error .ant-transfer-list-search:not([disabled]):hover {
@@ -24777,10 +24777,10 @@ tr.ant-table-expanded-row .ant-descriptions-view table {
   border-color: #faad14;
 }
 .ant-transfer-status-warning .ant-transfer-list-search:not([disabled]) {
-  border-color: var(--neutral-dc-color);
+  border-color: #d9d9d9;
 }
 .ant-transfer-status-warning .ant-transfer-list-search:not([disabled]):hover {
-  border-color: var(--primary-color);
+  border-color: #3f7ed1;
   border-right-width: 1px;
 }
 .ant-input-rtl .ant-transfer-status-warning .ant-transfer-list-search:not([disabled]):hover {
@@ -27898,77 +27898,114 @@ body .pl-20px {
 
   // 1, 2 两种设置方式效果一致，统一使用less变量
 */
-.ant-btn-primary:hover,
-.ant-btn-primary:focus {
+#root .ant-btn-primary:hover,
+#root .ant-btn-primary:focus {
   color: var(--white-color);
   background-color: var(--btn-hover-color);
   border-color: var(--btn-hover-color);
 }
-.ant-btn-primary[disabled],
-.ant-btn-primary[disabled]:is(:hover, :focus, :active) {
+#root .ant-btn-primary[disabled],
+#root .ant-btn-primary[disabled]:is(:hover, :focus, :active) {
   color: var(--white-color);
   background-color: var(--btn-disabled-color);
   border-color: var(--btn-disabled-color);
   opacity: 1;
   cursor: not-allowed;
 }
-.ant-btn-default:hover,
-.ant-btn-dashed:hover,
-.ant-btn-default:focus,
-.ant-btn-dashed:focus {
+#root .ant-btn-default:hover,
+#root .ant-btn-dashed:hover,
+#root .ant-btn-default:focus,
+#root .ant-btn-dashed:focus {
   color: var(--btn-hover-color);
   border-color: var(--btn-hover-color);
 }
-.ant-btn-default[disabled],
-.ant-btn-dashed[disabled],
-.ant-btn-default[disabled]:is(:hover, :focus, :active),
-.ant-btn-dashed[disabled]:is(:hover, :focus, :active) {
+#root .ant-btn-default[disabled],
+#root .ant-btn-dashed[disabled],
+#root .ant-btn-default[disabled]:is(:hover, :focus, :active),
+#root .ant-btn-dashed[disabled]:is(:hover, :focus, :active) {
   color: var(--btn-disabled-color);
   border-color: var(--btn-disabled-color);
   background-color: var(--white-color);
   opacity: 1;
 }
-.ant-input,
-.ant-input-textarea {
+#root .ant-input,
+#root .ant-input-textarea {
   border-radius: 4px;
 }
-.ant-input:focus,
-.ant-input-textarea:focus {
+#root .ant-input:focus,
+#root .ant-input-textarea:focus {
   border-color: var(--primary-color);
   box-shadow: 0 0 0 1px rgba(27, 95, 197, 0.2);
 }
-.ant-input-affix-wrapper {
+#root .ant-input-affix-wrapper {
   color: var(--gray-color);
   border-radius: 4px;
 }
-.ant-input-affix-wrapper-focused {
+#root .ant-input-affix-wrapper-focused {
   border-color: var(--primary-color);
   box-shadow: 0 0 0 2px rgba(27, 95, 197, 0.2);
 }
-.ant-picker-ranges .ant-picker-ok .ant-btn-sm {
+#root .ant-picker-ranges .ant-picker-ok .ant-btn-sm {
   padding: 1.6px 10px;
 }
-.ant-radio-button-wrapper {
+#root .ant-radio-button-wrapper {
   border-color: var(--primary-color);
 }
-.ant-radio-button-wrapper:first-child {
+#root .ant-radio-button-wrapper:first-child {
   border-left: 1px solid var(--primary-color);
 }
-.ant-radio-button-wrapper:not(:first-child):before {
+#root .ant-radio-button-wrapper:not(:first-child):before {
   background-color: transparent;
 }
-.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+#root .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
   color: var(--white-color);
   background-color: var(--primary-color);
 }
-.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):focus-within {
+#root .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):focus-within {
   box-shadow: none;
 }
-.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
+#root .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
   color: var(--white-color);
   border-color: var(--primary-color);
 }
-.ant-radio-button-wrapper-disabled:first-child,
-.ant-radio-button-wrapper-disabled:hover {
+#root .ant-radio-button-wrapper-disabled:first-child,
+#root .ant-radio-button-wrapper-disabled:hover {
   border-color: var(--primary-color);
+}
+#root .ant-menu {
+  color: var(--white-color);
+  background-color: transparent;
+}
+#root .ant-menu-horizontal {
+  border: 0;
+}
+#root .ant-menu-horizontal > .ant-menu-item a {
+  color: var(--white-color);
+}
+#root .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover {
+  color: var(--white-color);
+}
+#root .ant-menu-horizontal > .ant-menu-submenu-open {
+  color: var(--white-color);
+}
+#root .ant-menu-horizontal > .ant-menu-submenu-selected {
+  color: var(--white-color);
+}
+#root .ant-menu-horizontal > .ant-menu-item-selected:after {
+  border-bottom: 2px solid var(--white-color);
+}
+#root .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover:after {
+  border-bottom: 2px solid var(--white-color);
+}
+#root .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover:after {
+  border-bottom: 2px solid var(--white-color);
+}
+#root .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open:after {
+  border-bottom: 2px solid var(--white-color);
+}
+#root .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected:after {
+  border-bottom: 2px solid var(--white-color);
+}
+#root .ant-menu-light .ant-menu-submenu-title:hover {
+  color: var(--white-color);
 }
